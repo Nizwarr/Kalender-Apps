@@ -1,0 +1,14 @@
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\bin\Debug\Kalender.exe.config
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\bin\Debug\Kalender.exe
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\bin\Debug\Kalender.pdb
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.Form1.resources
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.Properties.Resources.resources
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.UserControlBlank.resources
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.csproj.GenerateResource.cache
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.exe
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.pdb
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.UserControlHari.resources
+C:\Users\Hp\source\repos\Kalender_sln\Kalender\obj\Debug\Kalender.EventForm.resources
