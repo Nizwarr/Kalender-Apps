@@ -28,38 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tx = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtanggal = new System.Windows.Forms.Label();
+            this.txtanggal = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txacara = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // tx
-            // 
-            this.tx.Enabled = false;
-            this.tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx.Location = new System.Drawing.Point(12, 36);
-            this.tx.Name = "tx";
-            this.tx.Size = new System.Drawing.Size(300, 26);
-            this.tx.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 26);
-            this.textBox2.TabIndex = 1;
-            // 
             // txtanggal
             // 
-            this.txtanggal.AutoSize = true;
-            this.txtanggal.Location = new System.Drawing.Point(18, 20);
+            this.txtanggal.Enabled = false;
+            this.txtanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtanggal.Location = new System.Drawing.Point(12, 36);
             this.txtanggal.Name = "txtanggal";
-            this.txtanggal.Size = new System.Drawing.Size(46, 13);
-            this.txtanggal.TabIndex = 2;
-            this.txtanggal.Text = "Tanggal";
+            this.txtanggal.Size = new System.Drawing.Size(300, 26);
+            this.txtanggal.TabIndex = 0;
+            this.txtanggal.TextChanged += new System.EventHandler(this.tx_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(12, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(300, 26);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tanggal";
             // 
             // txacara
             // 
@@ -87,9 +88,9 @@
             this.ClientSize = new System.Drawing.Size(329, 203);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txacara);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtanggal);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.tx);
             this.Name = "EventForm";
             this.Text = "EventForm";
             this.Load += new System.EventHandler(this.EventForm_Load);
@@ -100,9 +101,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tx;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label txtanggal;
+        private System.Windows.Forms.TextBox txtanggal;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label txacara;
         private System.Windows.Forms.Button btnSave;
     }

@@ -29,17 +29,26 @@
         private void InitializeComponent()
         {
             this.lbhari = new System.Windows.Forms.Label();
+            this.lbacara = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbhari
             // 
             this.lbhari.AutoSize = true;
             this.lbhari.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbhari.Location = new System.Drawing.Point(44, 31);
+            this.lbhari.Location = new System.Drawing.Point(40, 16);
             this.lbhari.Name = "lbhari";
             this.lbhari.Size = new System.Drawing.Size(25, 19);
             this.lbhari.TabIndex = 0;
             this.lbhari.Text = "00";
+            // 
+            // lbacara
+            // 
+            this.lbacara.Location = new System.Drawing.Point(3, 49);
+            this.lbacara.Name = "lbacara";
+            this.lbacara.Size = new System.Drawing.Size(104, 23);
+            this.lbacara.TabIndex = 1;
+            this.lbacara.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserControlHari
             // 
@@ -47,10 +56,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.lbacara);
             this.Controls.Add(this.lbhari);
             this.Name = "UserControlHari";
             this.Size = new System.Drawing.Size(110, 80);
             this.Load += new System.EventHandler(this.UserControlHari_Load);
+            this.Click += new System.EventHandler(this.UserControlHari_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,5 +70,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbhari;
+        private System.Windows.Forms.Label lbacara;
     }
 }

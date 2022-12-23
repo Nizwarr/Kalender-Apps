@@ -14,6 +14,9 @@ namespace Kalender
     public partial class Form1 : Form
     {
         int month, year;
+        public static int static_month, static_year;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +33,10 @@ namespace Kalender
 
             string namabulan = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbtanggal.Text = namabulan + " " + year;
+
+
+            static_month = month;
+            static_year = year;
 
             //First day of the month
             DateTime startofthemonth = new DateTime(year, month, 1);
@@ -73,6 +80,8 @@ namespace Kalender
                 year--;
             }
             month--;
+            static_month = month;
+            static_year = year;
             string namabulan = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbtanggal.Text = namabulan + " " + year;
 
@@ -113,6 +122,8 @@ namespace Kalender
                 year++;
             }
             month++;
+            static_month = month;
+            static_year = year;
             string namabulan = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbtanggal.Text = namabulan + " " + year;
 

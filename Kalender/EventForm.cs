@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqliClient;
 
 namespace Kalender
 {
@@ -16,30 +15,28 @@ namespace Kalender
         //create connection string
         string connString = "server=localhost;user id=root;database=db_kalender;sslmode=none";
         //
+        public static EventForm instance;
+        public TextBox tb1;
 
         public EventForm()
         {
             InitializeComponent();
+            tb1 = textBox1;
         }
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-
+            txtanggal.Text = UserControlHari.static_hari + "/" + Form1.static_month + "/" + Form1.static_year;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection(connString);
-            conn.Open();
-            string sql = "INSERT INTO tbl_kalender(date,event)values(?,?)";
-            MysqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("tanggal",txtanggal.Text);
-            cmd.Parameters.AddWithValue("acara", txacara.Text);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Berhasil tersimpan");
-            cmd.Dispose();
-            conn.Close();
+            UserControlHari.instance.lba.Text = textBox1.Text.ToString();
+        }
+
+        private void tx_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
